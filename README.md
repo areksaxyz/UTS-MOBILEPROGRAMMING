@@ -98,7 +98,6 @@ app/
 ---
 
 ## ✒️ Penulis
-
-**Advan**  
+  
 *MUHAMAD ARGA REKSAPATI - 24552011324 - TIF RP 24D CNS*  
 Tugas: PEMOGRAMAN MOBILE 1 - PERTEMUAN KE 5
