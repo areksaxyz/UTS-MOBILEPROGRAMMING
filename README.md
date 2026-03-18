@@ -93,5 +93,5 @@ app/
 ## ✒️ Penulis
 
 **Advan**  
-*Mahasiswa Pemrograman Mobile*  
-Tugas Akhir: Sistem Otentikasi & Interaksi Pengguna Cerdas
+*MUHAMAD ARGA REKSAPATI - 24552011324 - TIF RP 24C CNS*  
+Tugas: PEMOGRAMAN MOBILE 1 - PERTEMUAN KE 5
