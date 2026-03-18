@@ -51,7 +51,7 @@ Lihat demonstrasi penggunaan aplikasi melalui tautan di bawah ini:
 | :---: | :---: |
 | ![Login](screenshots/login.jpeg) | ![Register](screenshots/register.jpeg) |
 
-> *Catatan: Jika gambar tidak muncul, pastikan Anda telah meletakkan file gambar di dalam folder `screenshots/`.*
+> *tampilan halaman login dan juga register.*
 
 ---
 
