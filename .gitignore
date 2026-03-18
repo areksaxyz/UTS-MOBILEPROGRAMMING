@@ -1,0 +1,25 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+# Google Services file (optional, keep if you want to share it, but usually ignored for public repos)
+# google-services.json
+
+# Android Studio captures
+*.captures
+
+# NDK temp files
+.externalNativeBuild
+.cxx
+
+# Keystore files
+*.jks
+*.keystore
+
+# Token files
+google-services.json
