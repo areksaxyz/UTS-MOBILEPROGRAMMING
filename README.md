@@ -30,8 +30,8 @@ FormAuth adalah aplikasi Android modern yang dikembangkan menggunakan **Kotlin**
 
 ## 🎬 Demo Video
 
-Lihat demonstrasi penggunaan aplikasi melalui tautan di bawah ini:
-[**Tonton Demo di Google Drive**](https://drive.google.com/file/d/1WGs313iSqdBIbioZw_KoaqRrRznGwl7h/view?usp=drivesdk)
+Lihat demonstrasi penggunaan aplikasi melalui tautan ini:
+[**Tonton Demo Aplikasi**](https://drive.google.com/file/d/1WGs313iSqdBIbioZw_KoaqRrRznGwl7h/view?usp=drivesdk)
 
 ---
 
