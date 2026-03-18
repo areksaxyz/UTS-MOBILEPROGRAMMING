@@ -1,80 +1,97 @@
-# FormAuth Android App
+# FormAuth - Aplikasi Otentikasi Android
 
-FormAuth is an Android application built with **Kotlin** and **XML** in Android Studio.  
-This project was created for a Mobile Programming assignment and focuses on form handling, input validation, selection controls, animations, and custom UI backgrounds.
+FormAuth adalah aplikasi Android modern yang dikembangkan menggunakan **Kotlin** dan **XML** di Android Studio. Aplikasi ini dirancang untuk memenuhi tugas pemrograman mobile dengan fokus pada validasi input yang ketat, pengalaman pengguna (UX) yang interaktif, serta estetika desain yang bersih.
 
-## Features
+---
 
-- Login form
-- Register form
-- Real-time validation
-- Email format validation
-- Password and confirm password validation
-- Gender selection using RadioGroup
-- Hobby selection using CheckBox (minimum 3)
-- City selection using Spinner
-- AlertDialog confirmation before submit
-- Long press gesture on buttons
-- Activity transition animation
-- Shake animation for validation errors
-- Custom background images for login and register screens
+## 🚀 Fitur Utama
 
-## Technologies Used
+### 🔐 Otentikasi & Validasi
+- **Form Login & Registrasi:** Antarmuka pengguna yang responsif dengan Material Design.
+- **Validasi Real-time:** Feedback instan saat pengguna mengisi email dan kata sandi.
+- **Logika Validasi Ketat:**
+  - Format email harus valid (mengandung `@` dan `.com`).
+  - Kata sandi minimal 6 karakter.
+  - Konfirmasi kata sandi harus sesuai.
+- **Kontrol Pilihan:**
+  - Pemilihan jenis kelamin menggunakan `RadioGroup`.
+  - Pemilihan hobi menggunakan `CheckBox` (minimal harus memilih 3).
+  - Pemilihan kota menggunakan `Spinner`.
 
-- Kotlin
-- XML Layout
-- Material Components
-- Android Studio
+### 🎨 UI & Animasi
+- **Desain Modern:** Menggunakan teknik *Glassmorphism* dan kartu transparan.
+- **Animasi Interaktif:**
+  - Efek *Shake* (getar) pada form jika terjadi kesalahan validasi.
+  - Transisi antar Activity yang halus (*Fade & Slide*).
+  - Respon visual saat tombol ditekan lama (*Long Press*).
+- **Dialog Konfirmasi:** `AlertDialog` muncul sebelum data dikirimkan.
 
-## Project Structure
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+- **Bahasa:** Kotlin
+- **Layout:** XML dengan Material Components
+- **Database:** Room Persistence Library (Penyimpanan data lokal)
+- **Backend:** Firebase Authentication (Siap diintegrasikan)
+- **Library:** Glide (Untuk pemrosesan gambar/GIF)
+
+---
+
+## 📸 Cuplikan Layar
+
+| Halaman Login | Halaman Registrasi |
+| :---: | :---: |
+| ![Login](screenshots/login.png) | ![Register](screenshots/register.png) |
+
+> *Catatan: Jika gambar tidak muncul, pastikan Anda telah meletakkan file gambar di dalam folder `screenshots/`.*
+
+---
+
+## 📂 Struktur Project
 
 ```text
 app/
 ├── src/main/
 │   ├── java/com/example/formtugas/
-│   │   ├── LoginActivity.kt
-│   │   └── RegisterActivity.kt
+│   │   ├── data/                   # Logika Database (Room)
+│   │   ├── LoginActivity.kt        # Logika Bisnis Login
+│   │   └── RegisterActivity.kt     # Logika Registrasi & Validasi
 │   ├── res/
-│   │   ├── anim/
-│   │   ├── drawable/
-│   │   ├── layout/
-│   │   └── values/
+│   │   ├── anim/                   # File Animasi (Shake, Fade, dll)
+│   │   ├── drawable/               # Asset Gambar & Background
+│   │   ├── layout/                 # Definisi UI (XML)
+│   │   └── values/                 # Konfigurasi Warna & Tema
 │   └── AndroidManifest.xml
-├── build.gradle.kts
-├── settings.gradle.kts
-├── gradle.properties
+├── build.gradle.kts                # Manajemen Dependensi
 └── README.md
 ```
 
-## APK File
+---
 
-The generated debug APK can be found at:
-`build/outputs/apk/debug/FormTugas-debug.apk`
+## ⚙️ Cara Menjalankan Project
 
-## How to Run
+1. **Clone** repositori ini ke komputer Anda.
+2. Buka folder menggunakan **Android Studio** (versi Flamingo atau terbaru).
+3. Tunggu hingga proses **Gradle Sync** selesai.
+4. Hubungkan perangkat Android atau jalankan Emulator.
+5. Klik tombol **Run** (Shift + F10).
 
-1. Open the project in Android Studio
-2. Wait for Gradle sync to finish
-3. Connect an Android device or start an emulator
-4. Click Run
+---
 
-## Validation Rules
+## 📋 Aturan Validasi
 
-### Login
-- Email must not be empty
-- Email must be in valid format
-- Password must not be empty
+### Registrasi
+1. **Nama:** Tidak boleh kosong.
+2. **Email:** Harus sesuai format email standar.
+3. **Password:** Minimal 6 karakter.
+4. **Hobi:** Harus memilih minimal 3 pilihan.
+5. **Kota:** Harus memilih salah satu kota dari daftar.
 
-### Register
-- Name must not be empty
-- Email must be in valid format
-- Password must be at least 6 characters
-- Confirm password must match password
-- Gender must be selected
-- At least 3 hobbies must be selected
-- City must be selected
+---
 
-## Author
+## ✒️ Penulis
 
 **Advan**  
-Mobile Programming Assignment
+*Mahasiswa Pemrograman Mobile*  
+Tugas Akhir: Sistem Otentikasi & Interaksi Pengguna Cerdas
