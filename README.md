@@ -49,7 +49,7 @@ Lihat demonstrasi penggunaan aplikasi melalui tautan di bawah ini:
 
 | Halaman Login | Halaman Registrasi |
 | :---: | :---: |
-| ![Login](screenshots/login.png) | ![Register](screenshots/register.png) |
+| ![Login](screenshots/login.jpeg) | ![Register](screenshots/register.jpeg) |
 
 > *Catatan: Jika gambar tidak muncul, pastikan Anda telah meletakkan file gambar di dalam folder `screenshots/`.*
 
