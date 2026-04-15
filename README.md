@@ -75,18 +75,18 @@ graph TD
   <i>Menampilkan seluruh daftar seminar yang tersedia secara dinamis dari database.</i>
 </p>
 
-### 4. Manajemen Profil & Validasi
-<p align="center">
-  <img src="screenshots/akun.jpeg" width="300" alt="Form">
-  <br>
-  <i>Halaman profil untuk update data dan validasi password real-time.</i>
-</p>
-
-### 5. Riwayat Pendaftaran
+### 4. Riwayat Pendaftaran
 <p align="center">
   <img src="screenshots/riwayatpendaftaran.jpeg" width="300" alt="History">
   <br>
   <i>Daftar histori seminar yang pernah didaftarkan oleh pengguna.</i>
+</p>
+
+### 5. Manajemen Profil & Validasi
+<p align="center">
+  <img src="screenshots/akun.jpeg" width="300" alt="Form">
+  <br>
+  <i>Halaman profil untuk update data dan validasi password real-time.</i>
 </p>
 
 ### 6. Dialog Konfirmasi Logout
