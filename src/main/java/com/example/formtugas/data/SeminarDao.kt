@@ -17,4 +17,7 @@ interface SeminarDao {
 
     @Query("SELECT * FROM seminars WHERE id = :id")
     suspend fun getSeminarById(id: Int): Seminar?
+
+    @Query("UPDATE seminars SET quota = quota - 1 WHERE id = :id AND quota > 0")
+    suspend fun decrementQuota(id: Int): Int
 }

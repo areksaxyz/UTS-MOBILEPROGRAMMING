@@ -70,29 +70,35 @@ class SeminarActivity : AppCompatActivity() {
                 val currentDate = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault()).format(Date())
 
                 lifecycleScope.launch {
-                    val registration = Registration(
-                        userEmail = email,
-                        seminarId = seminarId,
-                        seminarTitle = seminarTitle,
-                        registrationDate = currentDate,
-                        userName = name,
-                        userPhone = phone,
-                        userGender = gender
-                    )
-                    db.registrationDao().insertRegistration(registration)
+                    val seminar = db.seminarDao().getSeminarById(seminarId)
+                    if (seminar != null && seminar.quota > 0) {
+                        val registration = Registration(
+                            userEmail = email,
+                            seminarId = seminarId,
+                            seminarTitle = seminarTitle,
+                            registrationDate = currentDate,
+                            userName = name,
+                            userPhone = phone,
+                            userGender = gender
+                        )
+                        db.registrationDao().insertRegistration(registration)
+                        db.seminarDao().decrementQuota(seminarId)
 
-                    // Simpan pendaftaran terakhir ke SessionManager (untuk backward compatibility)
-                    sessionManager.saveLastRegistration(name, email, phone, gender, seminarTitle)
+                        // Simpan pendaftaran terakhir ke SessionManager
+                        sessionManager.saveLastRegistration(name, email, phone, gender, seminarTitle)
 
-                    val intent = Intent(this@SeminarActivity, ResultActivity::class.java).apply {
-                        putExtra("NAME", name)
-                        putExtra("EMAIL", email)
-                        putExtra("PHONE", phone)
-                        putExtra("GENDER", gender)
-                        putExtra("SEMINAR", seminarTitle)
+                        val intent = Intent(this@SeminarActivity, ResultActivity::class.java).apply {
+                            putExtra("NAME", name)
+                            putExtra("EMAIL", email)
+                            putExtra("PHONE", phone)
+                            putExtra("GENDER", gender)
+                            putExtra("SEMINAR", seminarTitle)
+                        }
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        Toast.makeText(this@SeminarActivity, "Maaf, kuota seminar ini sudah habis!", Toast.LENGTH_LONG).show()
                     }
-                    startActivity(intent)
-                    finish()
                 }
             }
         }
