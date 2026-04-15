@@ -1,4 +1,4 @@
-# 🎓 Seminar Registration App - Clean & Professional Anime Edition
+# 🎓 Seminar Registration App - Anime Edition
 
 Aplikasi pendaftaran seminar berbasis Android yang menggabungkan estetika visual **Anime Style** dengan manajemen data modern menggunakan **Room Database**.
 
