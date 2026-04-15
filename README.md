@@ -82,18 +82,18 @@ graph TD
   <i>Halaman profil untuk update data dan validasi password real-time.</i>
 </p>
 
-### 5. Dialog Konfirmasi Logout
-<p align="center">
-  <img src="screenshots/logout.jpeg" width="300" alt="Dialog">
-  <br>
-  <i>Alert Dialog untuk mencegah user keluar aplikasi secara tidak sengaja.</i>
-</p>
-
-### 6. Riwayat Pendaftaran
+### 5. Riwayat Pendaftaran
 <p align="center">
   <img src="screenshots/riwayatpendaftaran.jpeg" width="300" alt="History">
   <br>
   <i>Daftar histori seminar yang pernah didaftarkan oleh pengguna.</i>
+</p>
+
+### 6. Dialog Konfirmasi Logout
+<p align="center">
+  <img src="screenshots/logout.jpeg" width="300" alt="Dialog">
+  <br>
+  <i>Alert Dialog untuk mencegah user keluar aplikasi secara tidak sengaja.</i>
 </p>
 
 ---
