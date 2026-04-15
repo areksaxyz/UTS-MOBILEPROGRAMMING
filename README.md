@@ -106,6 +106,7 @@ graph TD
 - **Local Storage**: [SharedPreferences](https://developer.android.com/training/data-storage/shared-preferences)
 - **UI Framework**: Material Design 3 (M3)
 - **Image Loader**: [Glide](https://github.com/bumptech/glide)
+- **Video Demo**: [Download / View on Google Drive](https://drive.google.com/file/d/1zauNOxDowmq0vb2Wp5BNGx9InKPY-b_K/view?usp=drivesdk)
 
 ---
 
