@@ -12,7 +12,35 @@
         android:theme="@style/Theme.FormTugas">
 
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SeminarActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SeminarDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SeminarListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".HistoryActivity"
             android:exported="false" />
 
         <activity

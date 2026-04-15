@@ -127,14 +127,13 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun setupSpinner() {
-        val adapter = object : ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, cityList) {
-            override fun getView(position: Int, convertView: android.view.View?, parent: android.view.ViewGroup): android.view.View {
-                val v = super.getView(position, convertView, parent)
-                (v as TextView).setTextColor(android.graphics.Color.BLACK)
+        val adapter = object : ArrayAdapter<String>(this, R.layout.spinner_item, cityList) {
+            override fun getDropDownView(position: Int, convertView: android.view.View?, parent: android.view.ViewGroup): android.view.View {
+                val v = layoutInflater.inflate(R.layout.spinner_dropdown_item, parent, false) as TextView
+                v.text = getItem(position)
                 return v
             }
         }
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerCity.adapter = adapter
     }
 

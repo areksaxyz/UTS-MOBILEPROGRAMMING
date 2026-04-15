@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">モバイルプログラミング</string>
+    <string name="app_name">Seminar Registration App</string>
+    <string name="seminar_title">Seminar Registration App</string>
+    <string name="welcome_user">Selamat Datang, %1$s!</string>
+    <string name="daftar_seminar">Daftar Seminar</string>
+    <string name="form_title">Form Pendaftaran Seminar</string>
+    <string name="label_name">Nama Lengkap</string>
+    <string name="label_email">Email</string>
+    <string name="label_phone">Nomor HP</string>
+    <string name="label_gender">Jenis Kelamin</string>
+    <string name="label_seminar">Pilihan Seminar</string>
+    <string name="label_agreement">Saya menyetujui data yang diinput benar</string>
+    <string name="btn_submit">Submit</string>
+    <string name="registration_success">Pendaftaran Berhasil</string>
+    <string name="back_to_home">Kembali ke Halaman Utama</string>
 </resources>

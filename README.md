@@ -1,103 +1,103 @@
-# FormAuth - Aplikasi Otentikasi Android
+# 🎓 Seminar Registration App - Clean & Professional Anime Edition
 
-FormAuth adalah aplikasi Android modern yang dikembangkan menggunakan **Kotlin** dan **XML** di Android Studio. Aplikasi ini dirancang untuk memenuhi tugas pemrograman mobile dengan fokus pada validasi input yang ketat, pengalaman pengguna (UX) yang interaktif, serta estetika desain yang bersih.
-
----
+Aplikasi pendaftaran seminar berbasis Android yang menggabungkan estetika visual **Anime Style** dengan manajemen data modern menggunakan **Room Database**.
 
 ## 🚀 Fitur Utama
 
-### 🔐 Otentikasi & Validasi
-- **Form Login & Registrasi:** Antarmuka pengguna yang responsif dengan Material Design.
-- **Validasi Real-time:** Feedback instan saat pengguna mengisi email dan kata sandi.
-- **Logika Validasi Ketat:**
-  - Format email harus valid (mengandung `@` dan `.com`).
-  - Kata sandi minimal 6 karakter.
-  - Konfirmasi kata sandi harus sesuai.
-- **Kontrol Pilihan:**
-  - Pemilihan jenis kelamin menggunakan `RadioGroup`.
-  - Pemilihan hobi menggunakan `CheckBox` (minimal harus memilih 3).
-  - Pemilihan kota menggunakan `Spinner`.
-
-### 🎨 UI & Animasi
-- **Desain Modern:** Menggunakan teknik *Glassmorphism* dan kartu transparan.
-- **Animasi Interaktif:**
-  - Efek *Shake* (getar) pada form jika terjadi kesalahan validasi.
-  - Transisi antar Activity yang halus (*Fade & Slide*).
-  - Respon visual saat tombol ditekan lama (*Long Press*).
-- **Dialog Konfirmasi:** `AlertDialog` muncul sebelum data dikirimkan.
+*   **Sistem Registrasi & Login**: Keamanan akun dengan validasi password kompleks (8+ karakter, Huruf Kapital, & Karakter Spesial).
+*   **Auto-Login (Session Manager)**: Menggunakan SharedPreferences agar user tidak perlu login berulang kali.
+*   **Dashboard Dinamis**: 
+    *   Greeting personal berdasarkan nama user.
+    *   **Last Registration Card**: Pengingat otomatis untuk seminar terakhir yang didaftarkan.
+    *   **Seminar Terpopuler**: List seminar yang diambil secara real-time dari database.
+*   **Manajemen Seminar (Room DB)**: Semua data seminar dan pendaftaran dikelola secara lokal, memastikan aplikasi tetap responsif tanpa lag.
+*   **Riwayat Pendaftaran**: Halaman khusus untuk melihat daftar seminar yang pernah diikuti.
+*   **Validasi Real-time**: Feedback instan saat pengisian form menggunakan `TextWatcher`.
+*   **UI/UX Anime Modern**: Menggunakan Material Design 3 dengan palet warna kustom dan aset visual bertema anime profesional.
 
 ---
 
-## 🎬 Demo Video
+## 📊 Alur Aplikasi (Flow Diagram)
 
-Lihat demonstrasi penggunaan aplikasi melalui tautan ini:
-[**Tonton Demo Aplikasi**](https://drive.google.com/file/d/1ApHiicS-cmgiOW12wrC74wvffqHtyv0a/view?usp=drivesdk)
-
----
-
-## 🛠️ Teknologi yang Digunakan
-
-- **Bahasa:** Kotlin
-- **Layout:** XML dengan Material Components
-- **Database:** Room Persistence Library (Penyimpanan data lokal)
-- **Backend:** Firebase Authentication (Siap diintegrasikan)
-- **Library:** Glide (Untuk pemrosesan gambar/GIF)
-
----
-
-## 📸 Cuplikan Layar
-
-| Halaman Login | Halaman Registrasi |
-| :---: | :---: |
-| ![Login](screenshots/login.jpeg) | ![Register](screenshots/register.jpeg) |
-
-> *tampilan halaman login dan juga register.*
-
----
-
-## 📂 Struktur Project
-
-```text
-app/
-├── src/main/
-│   ├── java/com/example/formtugas/
-│   │   ├── data/                   # Logika Database (Room)
-│   │   ├── LoginActivity.kt        # Logika Bisnis Login
-│   │   └── RegisterActivity.kt     # Logika Registrasi & Validasi
-│   ├── res/
-│   │   ├── anim/                   # File Animasi (Shake, Fade, dll)
-│   │   ├── drawable/               # Asset Gambar & Background
-│   │   ├── layout/                 # Definisi UI (XML)
-│   │   └── values/                 # Konfigurasi Warna & Tema
-│   └── AndroidManifest.xml
-├── build.gradle.kts                # Manajemen Dependensi
-└── README.md
+```mermaid
+graph TD
+    A[Mulai] --> B{Sudah Login?}
+    B -- Tidak --> C[Halaman Login]
+    B -- Ya --> F[Dashboard Utama]
+    
+    C --> D[Halaman Registrasi]
+    D --> E[Simpan ke Room DB]
+    E --> C
+    
+    C --> F
+    
+    F --> G[List Seminar]
+    G --> H[Detail Seminar]
+    H --> I[Form Pendaftaran]
+    
+    I --> J{Validasi Form}
+    J -- Gagal --> I
+    J -- Sukses --> K[Simpan Riwayat ke Room]
+    
+    K --> L[Halaman Hasil]
+    L --> M[Halaman Riwayat]
+    
+    F --> N[Halaman Profil]
+    N --> O[Update Password/Data]
+    
+    F --> P[Logout]
+    P --> C
 ```
+
+---
+
+## 📸 Screenshots
+
+### 1. Registrasi & Login
+<p align="center">
+  <img src="screenshots/register.jpeg" width="200" alt="Register">
+  <img src="screenshots/login.jpeg" width="200" alt="Login">
+</p>
+
+### 2. Dashboard (Setelah Login)
+<p align="center">
+  <img src="screenshots/home.jpeg" width="200" alt="Dashboard">
+  <img src="screenshots/listseminar.jpeg" width="200" alt="Seminar List">
+</p>
+
+### 3. Form Pendaftaran & Validasi
+<p align="center">
+  <img src="screenshots/akun.jpeg" width="200" alt="Form">
+  <img src="screenshots/logout.jpeg" width="200" alt="Dialog">
+</p>
+
+### 4. Riwayat Pendaftaran
+<p align="center">
+  <img src="screenshots/riwayatpendaftaran.jpeg" width="200" alt="History">
+</p>
+
+---
+
+## 🛠 Tech Stack
+
+- **Language**: [Kotlin](https://kotlinlang.org/)
+- **Database**: [Room Persistence Library](https://developer.android.com/training/data-storage/room)
+- **Concurrency**: [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) & [Flow](https://kotlinlang.org/docs/flow.html)
+- **Local Storage**: [SharedPreferences](https://developer.android.com/training/data-storage/shared-preferences)
+- **UI Framework**: Material Design 3 (M3)
+- **Image Loader**: [Glide](https://github.com/bumptech/glide)
 
 ---
 
 ## ⚙️ Cara Menjalankan Project
 
-1. **Clone** repositori ini ke komputer Anda.
-2. Buka folder menggunakan **Android Studio** (versi Flamingo atau terbaru).
-3. Tunggu hingga proses **Gradle Sync** selesai.
-4. Hubungkan perangkat Android atau jalankan Emulator.
-5. Klik tombol **Run** (Shift + F10).
+1. Clone repository ini.
+2. Buka di **Android Studio (Ladybug atau versi terbaru)**.
+3. Tunggu proses **Gradle Sync** selesai.
+4. Jalankan pada Emulator atau Device dengan minimal **Android 8.0 (Oreo)**.
+5. Pastikan melakukan **Rebuild Project** jika melakukan perubahan pada entitas Room.
 
 ---
 
-## 📋 Aturan Validasi
-
-### Registrasi
-1. **Nama:** Tidak boleh kosong.
-2. **Email:** Harus sesuai format email standar.
-3. **Password:** Minimal 6 karakter.
-4. **Hobi:** Harus memilih minimal 3 pilihan.
-5. **Kota:** Harus memilih salah satu kota dari daftar.
-
----
-
-## ✒️ Penulis
-  
-*MUHAMAD ARGA REKSAPATI - 24552011324 - TIF RP 24D CNS*  
-Tugas: PEMOGRAMAN MOBILE 1 - PERTEMUAN KE 5
+## 📝 Catatan Pengembangan (Versi 4)
+Pada pembaruan terakhir, aplikasi telah dimigrasi sepenuhnya dari data statis ke **Room Database** versi 4, menambahkan tabel `registrations` untuk mendukung fitur riwayat, serta memperbaiki navigasi bawah di 6 Activity utama.

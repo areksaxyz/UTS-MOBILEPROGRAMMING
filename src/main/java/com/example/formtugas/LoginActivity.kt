@@ -26,6 +26,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var loginCard: android.view.View
 
     private val db by lazy { AppDatabase.getDatabase(this) }
+    private val sessionManager by lazy { SessionManager(this) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,7 +73,10 @@ class LoginActivity : AppCompatActivity() {
             val user = db.userDao().getUserByEmail(email)
             if (user != null) {
                 if (user.password == password) {
+                    sessionManager.saveUser(user.name, user.email)
                     Toast.makeText(this@LoginActivity, "Login berhasil!", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                    startActivity(intent)
                     finish()
                 } else {
                     tilPassword.error = "Password salah"

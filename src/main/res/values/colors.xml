@@ -13,6 +13,18 @@
     <color name="btn_dark_pressed">#3A3A3A</color>
     <color name="error_red">#FF6B6B</color>
 
+    <!-- Professional Modern Theme -->
+    <color name="pro_primary">#4FC3F7</color>
+    <color name="pro_primary_dark">#2F80C3</color>
+    <color name="pro_accent">#C97032</color>
+    <color name="pro_surface">#FFFFFF</color>
+    <color name="pro_surface_variant">#F8FAFC</color>
+    <color name="pro_text_primary">#1E293B</color>
+    <color name="pro_text_secondary">#64748B</color>
+    <color name="pro_border">#CBD5E1</color>
+    <color name="pro_card_overlay">#F2FFFFFF</color> <!-- 95% White -->
+    <color name="pro_nav_bg">#FFFFFF</color>
+
     <!-- Login Sasuke Theme -->
     <color name="login_overlay">#8A0F172A</color>
     <color name="login_card">#66111827</color>
