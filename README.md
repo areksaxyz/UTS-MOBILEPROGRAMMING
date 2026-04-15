@@ -57,23 +57,43 @@ graph TD
 <p align="center">
   <img src="screenshots/register.jpeg" width="200" alt="Register">
   <img src="screenshots/login.jpeg" width="200" alt="Login">
+  <br>
+  <i>Halaman registrasi akun baru dan login user menggunakan Room Database.</i>
 </p>
 
-### 2. Dashboard (Setelah Login)
+### 2. Dashboard Utama
 <p align="center">
-  <img src="screenshots/home.jpeg" width="200" alt="Dashboard">
-  <img src="screenshots/listseminar.jpeg" width="200" alt="Seminar List">
+  <img src="screenshots/home.jpeg" width="300" alt="Dashboard">
+  <br>
+  <i>Dashboard dengan greeting personal, Last Registration card, dan list seminar terpopuler.</i>
 </p>
 
-### 3. Form Pendaftaran & Validasi
+### 3. Daftar Seminar
 <p align="center">
-  <img src="screenshots/akun.jpeg" width="200" alt="Form">
-  <img src="screenshots/logout.jpeg" width="200" alt="Dialog">
+  <img src="screenshots/listseminar.jpeg" width="300" alt="Seminar List">
+  <br>
+  <i>Menampilkan seluruh daftar seminar yang tersedia secara dinamis dari database.</i>
 </p>
 
-### 4. Riwayat Pendaftaran
+### 4. Manajemen Profil & Validasi
 <p align="center">
-  <img src="screenshots/riwayatpendaftaran.jpeg" width="200" alt="History">
+  <img src="screenshots/akun.jpeg" width="300" alt="Form">
+  <br>
+  <i>Halaman profil untuk update data dan validasi password real-time.</i>
+</p>
+
+### 5. Dialog Konfirmasi Logout
+<p align="center">
+  <img src="screenshots/logout.jpeg" width="300" alt="Dialog">
+  <br>
+  <i>Alert Dialog untuk mencegah user keluar aplikasi secara tidak sengaja.</i>
+</p>
+
+### 6. Riwayat Pendaftaran
+<p align="center">
+  <img src="screenshots/riwayatpendaftaran.jpeg" width="300" alt="History">
+  <br>
+  <i>Daftar histori seminar yang pernah didaftarkan oleh pengguna.</i>
 </p>
 
 ---
