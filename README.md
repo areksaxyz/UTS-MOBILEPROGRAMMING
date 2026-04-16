@@ -1,7 +1,5 @@
 # 🎓 Seminar Registration App - Anime Edition
 
-[![Repository](https://img.shields.io/badge/Repository-UTS--MOBILEPROGRAMMING-blue?style=for-the-badge&logo=github)](https://github.com/areksaxyz/UTS-MOBILEPROGRAMMING)
-
 Aplikasi pendaftaran seminar berbasis Android yang menggabungkan estetika visual **Anime Style** dengan manajemen data modern menggunakan **Room Database**. Proyek ini dikembangkan sebagai tugas **UTS Mobile Programming** dengan standar profesional.
 
 ## 🌟 Fitur Utama
@@ -123,9 +121,3 @@ graph TD
 4. **Build & Run**: Jalankan aplikasi pada perangkat fisik atau emulator dengan **SDK 26 (Android 8.0)** atau lebih tinggi.
 
 ---
-
-## 📝 Catatan Rilis (v4.0.0-UTS)
-Aplikasi ini telah melewati tahap migrasi penuh dari data statis ke **Full Room Persistence**. Pembaruan mencakup penambahan tabel riwayat, logika pengurangan kuota otomatis, serta optimasi navigasi di seluruh Activity utama untuk memastikan pengalaman pengguna yang mulus dan tanpa bug.
-
----
-**Link Repository Utama:** [https://github.com/areksaxyz/UTS-MOBILEPROGRAMMING](https://github.com/areksaxyz/UTS-MOBILEPROGRAMMING)
